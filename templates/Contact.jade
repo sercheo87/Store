@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+  div 
+    h1 Contact
+        p #{blogArticles}
+    
+    for article in blogArticles
+     p #{article.picture}
+     p #{article.title}
+     p #{article.text}
